@@ -10,16 +10,26 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.section-badge {
+    display: inline-block;
+    background: rgba(51, 167, 240, 0.15);
+    color: #33a7f0;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
 /* COMMON */
 .panel {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
 }
 
 .content {
     width: 100%;
-    padding: 6rem;
+    padding-block: 5rem;
 }
 
 .content.narrow {
@@ -467,4 +477,191 @@ DOCTORS -------------------------- */
 
 .doctor-card:hover h3 {
     color: #33a7f0;
+}
+
+
+/* --------------------- WhyUs --------------------------  */
+/* WHY US SECTION */
+.why-us {
+    background: #0f172a;
+    color: #ffffff;
+}
+
+/* Ensure heading is readable on dark bg */
+.why-us h2 {
+    color: #ffffff;
+}
+
+/* Cards */
+.why-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 1.8rem;
+    height: 100%;
+}
+
+/* Card title */
+.why-card h5 {
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    color: #ffffff;
+}
+
+/* Card text */
+.why-card p {
+    color: #cbd5f5;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+
+/* -------------------------- Contact Section ------------------- */
+
+/* CONTACT SECTION */
+.contact-section {
+    background: #ffffff;
+    color: #111827;
+}
+
+/* Left content */
+.contact-section h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}
+
+.contact-section p {
+    color: #475569;
+}
+
+/* Form card */
+.contact-form-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form-card h4 {
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+/* Inputs */
+.contact-form-card input,
+.contact-form-card textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Focus */
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+    outline: none;
+    border-color: #33a7f0;
+}
+
+/* Button */
+.contact-form-card button {
+    width: 100%;
+    background: #33a7f0;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form-card button:hover {
+    opacity: 0.9;
+}
+
+
+/* ----------------------- Footer ----------------------- */
+/* FOOTER */
+.site-footer {
+    background: #0f172a;
+    color: #cbd5f5;
+    padding: 4rem 0 2rem;
+}
+
+/* Logo */
+.footer-brand h3 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-brand span {
+    color: #33a7f0;
+}
+
+/* Text */
+.site-footer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Titles */
+.footer-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: #cbd5f5;
+    text-decoration: none;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+/* SAME HOVER EFFECT AS NAV */
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #33a7f0;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #33a7f0;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* Bottom bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #94a3b8;
 }
