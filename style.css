@@ -139,6 +139,29 @@ li {
     text-align: center;
 }
 
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    /* controls visual width */
+    margin: 0 auto;
+    /* centers the column itself */
+}
+
+/* Text alignment stays left */
+.footer-col,
+.footer-col * {
+    text-align: left;
+}
+
+
+/* On desktop, keep text readable (not fully centered paragraphs) */
+/* @media (min-width: 992px) {
+    .footer-col {
+        align-items: flex-start;
+    }
+} */
+
 /* COLORS */
 .panel-1 {
     background: #0f172a;
@@ -412,7 +435,7 @@ li {
 
 @media (max-width: 991px) {
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 
     .hero .content {
@@ -436,8 +459,9 @@ DOCTORS -------------------------- */
 
 /* Section title */
 .panel-2 .section-title {
-    font-size: 2.2rem;
-    font-weight: 700;
+    /* font-size: 2.2rem; */
+    /* font-weight: 700; */
+    font-size: clamp(2rem, 4vw, 3rem);
     color: #0f172a;
 }
 
@@ -664,4 +688,89 @@ DOCTORS -------------------------- */
     margin: 0;
     font-size: 0.85rem;
     color: #94a3b8;
+}
+
+.connect-btn {
+    position: fixed;
+    top: 50%;
+    right: -45px;
+    transform: translateY(-50%) rotate(-90deg);
+    background: linear-gradient(135deg, #33a7f0, #7cc9ff);
+    color: #0f172a;
+    border: none;
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.connect-btn:hover {
+    background: linear-gradient(135deg, #7cc9ff, #33a7f0);
+    color: #0f172a;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #33a7f0, #7cc9ff);
+    color: #000;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #33a7f0;
+}
+
+.btn-close {
+    background-color: #33a7f0;
+}
+
+.btn-close:hover,
+.btn-close:active {
+    background-color: #33a7f0;
+}
+
+.btn-close:active {
+    background-color: #33a7f0 !important;
+}
+
+
+
+
+
+.footer-bottom-link {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.footer-bottom-link:hover {
+    color: #33a7f0;
+}
+
+/* underline hover effect (same pattern) */
+.footer-bottom-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #33a7f0;
+    transition: width 0.3s ease;
+}
+
+.footer-bottom-link:hover::after {
+    width: 100%;
 }

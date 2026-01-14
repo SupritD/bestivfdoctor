@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand fw-bold" href="#">
+        <a class="navbar-brand fw-bold" href="index.html">
           <img src="images/logo.png" alt="logo"> </a>
 
         <!-- Mobile Toggle -->
@@ -25,10 +25,10 @@
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#our-doctors">Our Doctors</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
           </ul>
         </div>
@@ -39,7 +39,7 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
     <div class="offcanvas-header">
-      <a href="#"><img src="images/logo.png" alt="logo"></a>
+      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
@@ -104,7 +104,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="panel">
+  <section id="about-us" class="panel">
     <div class="container">
       <div class="content narrow">
         <span class="section-badge">Trusted IVF Care</span>
@@ -144,7 +144,7 @@
     </div>
   </section>
 
-  <section class="panel panel-3 why-us">
+  <section id="why-us" class="panel panel-3 why-us">
     <div class="container">
       <div class="content">
 
@@ -219,17 +219,20 @@
 
 
   <!-- OUR DOCTORS -->
-  <section class="panel panel-2">
+  <section class="panel panel-2" id="our-doctors">
     <div class="content">
 
-      <h2 class="section-title text-center mb-5">Our Doctors</h2>
+      <div class="text-center mb-5">
+        <span class="section-badge">Our Specialists</span>
+        <h2 class="section-title">Our Doctors</h2>
+      </div>
 
       <div class="row justify-content-center g-4">
 
         <!-- Doctor 1 -->
         <div class="col-md-6 col-lg-4">
-          <a href="index4.html" class="doctor-card d-block text-center">
-            <img src="https://placehold.co/306x340" alt="Dr Hrishikesh Pai" class="img-fluid mb-3">
+          <a href="dr-hrishikesh-pai.html" class="doctor-card d-block text-center">
+            <img src="images/dr-hrishikesh-pai.png" alt="Dr Hrishikesh Pai" class="img-fluid mb-3">
             <h3>Dr Hrishikesh Pai</h3>
             <p>MD FRCOG (UK-HON) FCPS FICOG MSc (USA)</p>
           </a>
@@ -237,8 +240,8 @@
 
         <!-- Doctor 2 -->
         <div class="col-md-6 col-lg-4">
-          <a href="index5.html" class="doctor-card d-block text-center">
-            <img src="https://placehold.co/306x340" alt="Dr Nandita Palshetkar" class="img-fluid mb-3">
+          <a href="dr-nandita-palshetkar.html" class="doctor-card d-block text-center">
+            <img src="images/dr-nandita-palshetkar.png" alt="Dr Nandita Palshetkar" class="img-fluid mb-3">
             <h3>Dr Nandita Palshetkar</h3>
             <p>MD, FCPS, FICOG, FRCOG (UK)</p>
           </a>
@@ -255,7 +258,8 @@
 
 
 
-  <section class="panel panel-4 contact-section">
+
+  <section id="contact" class="panel panel-4 contact-section">
     <div class="container">
       <div class="content">
 
@@ -310,12 +314,14 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="row g-4">
+      <div class="row g-4 text-center text-lg-start">
 
         <!-- COLUMN 1: LOGO + INFO -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 footer-col">
           <div class="footer-brand pb-4">
-            <a href="#"><img src="images/logo.png" alt=""></a>
+            <a href="index.html">
+              <img src="images/logo.png" alt="Bloom IVF">
+            </a>
           </div>
 
           <p>
@@ -325,25 +331,25 @@
           </p>
 
           <p>
-            Helping couples achieve their dream of parenthood since <strong>1993</strong>,
-            with multiple IVF centres across India.
+            Helping couples achieve their dream of parenthood since
+            <strong>1993</strong>, with multiple IVF centres across India.
           </p>
         </div>
 
         <!-- COLUMN 2: USEFUL LINKS -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 footer-col">
           <h4 class="footer-title">Useful Links</h4>
           <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
             <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#our-doctors">Our Doctors</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
         <!-- COLUMN 3: SERVICES -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 footer-col">
           <h4 class="footer-title">Our Services</h4>
           <ul class="footer-links">
             <li>IVF & ICSI</li>
@@ -357,11 +363,27 @@
       </div>
 
       <!-- BOTTOM BAR -->
-      <div class="footer-bottom text-center mt-5">
-        <p>© 2026 Bloom IVF. All Rights Reserved.</p>
+      <div class="footer-bottom mt-5">
+        <div class="row align-items-center text-center text-md-start">
+
+          <!-- LEFT -->
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p class="mb-0">© 2026 Bloom IVF. All Rights Reserved.</p>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-md-6 text-md-end">
+            <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+            <span class="mx-2">|</span>
+            <a href="terms-condition.html" class="footer-bottom-link">Terms & Conditions</a>
+          </div>
+
+        </div>
       </div>
+
     </div>
   </footer>
+
 
 
 
@@ -545,9 +567,65 @@
   </section> -->
 
 
+  <button type="button" class="connect-btn" data-bs-toggle="modal" data-bs-target="#enquireModal">
+    Let’s Connect
+  </button>
+
+  <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content bg-black border-0 shadow-lg rounded-3" style="max-width:500px; margin:auto;">
+        <div class="modal-body p-4">
+          <div class="modal-header border-0 p-0 pb-1">
+            <h5 class="form-title">Exclusive IVF Offers. Limited Slots. Enquire Today!</h5>
+            <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- your exact form -->
+          <form class="appointment-form" id="popupFormInner2" action="./email.php" method="post">
+            <div class="row">
+              <!-- Honeypot Anti-Bot Field -->
+              <input type="text" name="website" style="display:none !important;" tabindex="-1" autocomplete="off">
+              <div class="form-group style-border3 col-12 mb-3">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name *" required>
+              </div>
+              <div class="form-group style-border3 col-12 mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+              </div>
+              <div class="form-group style-border3 col-12 mb-3">
+                <!--<input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone*"-->
+                <!--    required>-->
+
+                <input type="tel" id="mobile_code2" class="form-control" placeholder="Phone Number *" name="phone"
+                  style="width: 100%" required />
+                <input type="hidden" name="dial_code" id="dial_code_2">
+              </div>
+              <div class="col-12 form-group style-border3 mb-3">
+                <textarea placeholder="Type Your Message" name="message" class="form-control"></textarea>
+              </div>
+              <input type="hidden" name="subject" value="Danube Enquiry">
+              <!-- Add reCAPTCHA widget here -->
+              <!-- <div class="g-recaptcha" data-sitekey="6LckGQIsAAAAAHj-aq8TCk4QFXOzHeGrzUsotJS6"
+                                        style="margin-bottom:10px;"> -->
+            </div>
+            <div class="col-12 form-btn">
+              <!-- <button class="th-btn border-0 px-2 " style="background-color: #ab8965; color: white;"
+                                type="submit">
+                                Send
+                            </button> -->
+              <button type="submit" class="submit-btn w-100">
+                Submit Enquiry
+              </button>
+            </div>
+            <p class="form-messages mb-0 mt-3"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!-- <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script> -->
   <!-- <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="lenis.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"></script>
   <script src="./main.js"></script>
 </body>
 
