@@ -38,7 +38,7 @@ $name    = clean_header_field($_POST['name'] ?? '');
 $email   = clean_header_field($_POST['email'] ?? '');
 $phone   = clean_header_field($_POST['phone'] ?? '');
 $message = clean_input($_POST['message'] ?? '');  // allow newlines
-$form = $_POST['form'];
+$form = $_POST['form'] ?? '';
 
 $honeypot  = $_POST['website'] ?? '';  // Hidden field
 
@@ -184,7 +184,7 @@ try {
     $mail->addCustomHeader('X-Mailer: PHP/' . phpversion());
     $mail->addCustomHeader('MIME-Version: 1.0');
 
-    $mail->setFrom('lead@bestivfdoctor.co.in', 'Best IVF Doctor');
+    $mail->setFrom('info@bestivfdoctor.in', 'Best IVF Doctor');
     // $mail->addAddress('sanjaresolutions@gmail.com', 'sanjaresolutions');
     $mail->addAddress('siddiquimahfooz327@gmail.com', 'mahfooz');
     $mail->addBCC('supritdagade77@gmail.com');

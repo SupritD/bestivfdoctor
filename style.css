@@ -20,6 +20,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.section-badge-banner {
+  background: rgba(0, 0, 0, 0.29) !important;
+}
+
 /* COMMON */
 .panel {
   /* min-height: 100vh; */
@@ -761,14 +765,12 @@ DOCTORS -------------------------- */
 }
 
 .animated-gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(12, 76, 102, 1),
-    rgba(42, 123, 155, 1),
-    rgb(46, 153, 219),
-    rgba(42, 123, 155, 1),
-    rgba(12, 76, 102, 1)
-  );
+  background: linear-gradient(90deg,
+      rgba(12, 76, 102, 1),
+      rgba(42, 123, 155, 1),
+      rgb(46, 153, 219),
+      rgba(42, 123, 155, 1),
+      rgba(12, 76, 102, 1));
   background-size: 400% 400%;
   animation: gradientFlow 12s ease-in-out infinite;
 }
@@ -778,10 +780,81 @@ DOCTORS -------------------------- */
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+.banner-bg-image {
+  height: 90vh;
+  transform: rotateY(180deg);
+}
+
+.new-hero {
+  background-image: url("./images/bestivfdoctor-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  min-height: 90vh;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .new-hero {
+    background-image: none;
+    background: linear-gradient(to right, #caf2fc, #f1f6f9);
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-content {
+    margin-top: 20vh;
+  }
+}
+
+
+.fixed-left {
+  position: fixed;
+  left: 1rem;
+  bottom: 3rem;
+  z-index: 20;
+  list-style: none;
+
+}
+
+.fixed-left li {
+  padding: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+
+}
+
+.fixed-left li a,
+.fixed-left li button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.fixed-left li a span {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
