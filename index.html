@@ -5,8 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bloom IVF</title>
+  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <link rel="stylesheet" href="owl.carousel.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -112,17 +123,17 @@
     </div>
     <div class="container content">
       <div class="row">
-        <div class="col-lg-7">
-          <div class="banner-content">
+        <div class="col-lg-7 d-flex align-items-end">
+          <div class="banner-content w-100  ">
 
             <span class="badge section-badge-banner">Trusted IVF Care</span>
 
             <h1>Your Trusted Partner<br>in Parenthood</h1>
 
-            <p>
+            <!-- <p>
               With decades of excellence, advanced IVF technology, and compassionate
               care, Bloom IVF is one of the most trusted IVF centres in India.
-            </p>
+            </p> -->
 
             <!-- <ul class="hero-points">
             <li>25+ Years of IVF Excellence</li>
@@ -136,11 +147,13 @@
           <div class="hero-form">
             <h3>Exclusive IVF Offers. Limited Slots. Enquire Today!</h3>
 
-            <form>
-              <input type="text" placeholder="Full Name" required>
-              <input type="email" placeholder="Email Address" required>
-              <input type="tel" placeholder="Mobile Number" required>
-              <textarea placeholder="Your Message" rows="4"></textarea>
+            <form class="appointment-form" id="popupFormInner2" action="./email.php" method="post">
+              <!-- Honeypot Anti-Bot Field -->
+              <input type="text" name="website" style="display:none !important;" tabindex="-1" autocomplete="off">
+              <input type="text" name="name" id="name" placeholder="Full Name" required>
+              <input type="email" name="email" id="email" placeholder="Email Address" required>
+              <input type="tel" name="phone" id="phone" placeholder="Mobile Number" required>
+              <textarea placeholder="Your Message" rows="4" name="message"></textarea>
 
               <button type="submit">Send Enquiry</button>
             </form>
@@ -301,6 +314,172 @@
 
 
 
+  <!-- TESTIMONIALS -->
+
+  <section class=" panel panel-2 bg-white-transparent d-flex flex-column pb-0 pt-0">
+    <div class="text-center mb-5">
+      <span class="section-badge">Patient Testimonials</span>
+      <h2 class="section-title">What Our Patients Say</h2>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-md-3 mb-3 mb-md-0">
+          <h3 class="">Excellent</h3>
+          <div style="color: #fadb53;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Patient voices that celebrate trust, comfort, and beautiful outcomes.</p>
+          <img style="width:100px" src="images/google-logo.png" alt="">
+        </div>
+        <div class="col-sm-7 col-md-9">
+          <div id="testimonial-slider" class="owl-carousel owl-theme position-relative">
+            <div class="position-relative border p-3 d-flex justify-content-start gap-3 flex-column">
+              <div class="d-flex justify-content-start gap-3 align-items-center">
+                <div>
+                  <div class="bg-danger testimonial-profile mb-0">K</div>
+                </div>
+                <div>
+                  <h5 class="mb-0 testimonial-client-name">Kulwinder (Switzerland)</h5>
+                  <!-- <div>
+                    <span>25 feb 2025</span>
+                  </div> -->
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary d-flex align-items-center justify-content-center text-white"
+                  style="width:20px; font-size: 14px; height:20px; border-radius:50%;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div style="color: #fadb53;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="position-absolute top-0 end-0 mt-3 me-3">
+                <img src="images/download.png" alt="">
+              </div>
+              <p class="mb-0 testimonial-client-review">Have u seen a Angel in your life ? i had seen. After my 2
+                Abortion i was very upset. My ex-incharge Ravinder kaur ( now Superviser ) told me about excellent Dr.
+                Pai Team. I started treatment. I got all needed guidance/treatment
+                instructions per telefon and per whatsupp also before and after my Pregnancy. Now i m so happy to have a
+                little naughty baby boy. I am so thankful to Dr Hrishikesh Pai and his team. God bless you all Guys</p>
+            </div>
+            <div class="position-relative border p-3 d-flex justify-content-start gap-3 flex-column">
+              <div class="d-flex justify-content-start gap-3 align-items-center">
+                <div>
+                  <div class="bg-warning testimonial-profile mb-0">S</div>
+                </div>
+                <div>
+                  <h5 class="mb-0 testimonial-client-name">Saira Mistry</h5>
+                  <!-- <div>
+                    <span>25 feb 2025</span>
+                  </div> -->
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary d-flex align-items-center justify-content-center text-white"
+                  style="width:20px; font-size: 14px; height:20px; border-radius:50%;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div style="color: #fadb53;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="position-absolute top-0 end-0 mt-3 me-3">
+                <img src="images/download.png" alt="">
+              </div>
+              <p class="mb-0 testimonial-client-review">It was great experience with Dr Nandita and it's team of dr
+                Nandita Palshetkar My case was impossible but u all made it possible it like dream come true. Never
+                expected to get twin babies that too normal and they didn't require NICU It was all because of Dr
+                Nandita and her team of doctors Thanks to Dr Nandita and her team of professionals</p>
+            </div>
+            <div class="position-relative border p-3 d-flex justify-content-start gap-3 flex-column">
+              <div class="d-flex justify-content-start gap-3 align-items-center">
+                <div>
+                  <div class="bg-info testimonial-profile mb-0">R</div>
+                </div>
+                <div>
+                  <h5 class="mb-0 testimonial-client-name">Rajbir Singh</h5>
+                  <!-- <div>
+                    <span>25 feb 2025</span>
+                  </div> -->
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary d-flex align-items-center justify-content-center text-white"
+                  style="width:20px; font-size: 14px; height:20px; border-radius:50%;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div style="color: #fadb53;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="position-absolute top-0 end-0 mt-3 me-3">
+                <img src="images/download.png" alt="">
+              </div>
+              <p class="mb-0 testimonial-client-review">Our whole family is thankful to Dr. Pai and the team for the
+                care and advance treatment throughout the pregnancy. We are blessed with twin baby boys. We wish them
+                all the best for their future endeavours.</p>
+            </div>
+            <div class="position-relative border p-3 d-flex justify-content-start gap-3 flex-column">
+              <div class="d-flex justify-content-start gap-3 align-items-center">
+                <div>
+                  <div class="bg-primary testimonial-profile mb-0">F</div>
+                </div>
+                <div>
+                  <h5 class="mb-0 testimonial-client-name">Mrs Farida Mobedji Khan</h5>
+                  <div>
+                    <span>25 feb 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary d-flex align-items-center justify-content-center text-white"
+                  style="width:20px; font-size: 14px; height:20px; border-radius:50%;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div style="color: #fadb53;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="position-absolute top-0 end-0 mt-3 me-3">
+                <img src="images/download.png" alt="">
+              </div>
+              <p class="mb-0 testimonial-client-review">Dr Nandita, Oh ! “The blessed one from god with a midas touch”.
+                Whoever this beautiful and caring doctor touches with her expertise, is blessed with the greatest joy of
+                life “A BABY ”. I conceived through her treatment at my age of 46 and am blessed with a angelic son in
+                2009. I wish the same joy and happiness for all childless couples who have “ HOPE “ in “GOD“ and “FAITH”
+                in DR Nandita’s treatment. A Big GOD BLESS to all.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
 
 
@@ -340,11 +519,13 @@
             <div class="contact-form-card">
               <h4>Exclusive IVF Offers. Limited Slots. Enquire Today!</h4>
 
-              <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Mobile Number" required>
-                <textarea rows="4" placeholder="Your Message"></textarea>
+              <form class="appointment-form" id="popupFormInner2" action="./email.php" method="post">
+                <!-- Honeypot Anti-Bot Field -->
+                <input type="text" name="website" style="display:none !important;" tabindex="-1" autocomplete="off">
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" id="phone" placeholder="Mobile Number" required>
+                <textarea rows="4" placeholder="Your Message" name="message"></textarea>
 
                 <button type="submit">Send Enquiry</button>
               </form>
@@ -639,12 +820,7 @@
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
               </div>
               <div class="form-group style-border3 col-12 mb-3">
-                <!--<input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone*"-->
-                <!--    required>-->
-
-                <input type="tel" id="mobile_code2" class="form-control" placeholder="Phone Number *" name="phone"
-                  style="width: 100%" required />
-                <input type="hidden" name="dial_code" id="dial_code_2">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone*" required>
               </div>
               <div class="col-12 form-group style-border3 mb-3">
                 <textarea placeholder="Type Your Message" name="message" class="form-control"></textarea>
@@ -696,8 +872,56 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script> -->
   <!-- <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="lenis.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./main.js"></script>
+  <script>$("#testimonial-slider").owlCarousel({
+      loop: true,
+      responsiveClass: true,
+      margin: 10,
+      items: 2,
+      autoplay: true,
+      autoplayHoverPause: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+          // navText: [
+          //     "<i class='fa fa-chevron-left'></i>",
+          //     "<i class='fa fa-chevron-right'></i>",
+          // ],
+        },
+        600: {
+          items: 2,
+          nav: true,
+          navText: [
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>",
+          ],
+        },
+        600: {
+          items: 2,
+          nav: true,
+          navText: [
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>",
+          ],
+        },
+        1000: {
+          items: 2,
+          nav: true,
+          navText: [
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>",
+          ],
+          loop: true,
+        },
+      },
+    });</script>
 </body>
 
 </html>

@@ -816,16 +816,40 @@ DOCTORS -------------------------- */
   }
 }
 
-@media (min-width: 992px) {
-  .banner-content {
-    margin-top: 20vh;
-  }
+
+
+.banner-content {
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.45) 50%,
+      rgba(255, 255, 255, 0.75) 100%);
+
+
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+  border-radius: 18px;
+  padding: 12px;
 }
 
+.banner-content h1 {
+  font-size: 44px;
+}
 
+@media (min-width: 992px) {
+
+  /* .banner-content {
+    margin-top: 20vh;
+  } */
+  .banner-content {
+    margin-bottom: 55px;
+
+  }
+}
 .fixed-left {
   position: fixed;
-  left: 1rem;
+  right: 1rem;
   bottom: 3rem;
   z-index: 20;
   list-style: none;
@@ -857,4 +881,55 @@ DOCTORS -------------------------- */
   text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+
+/* ---------------- Testimonial --------------------- */
+
+.testimonial-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.testimonial-client-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.testimonial-client-review {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+#testimonial-slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#testimonial-slider .owl-nav .owl-prev {
+  margin-left: -20px;
+}
+
+#testimonial-slider .owl-nav .owl-next {
+  margin-right: -20px;
 }
